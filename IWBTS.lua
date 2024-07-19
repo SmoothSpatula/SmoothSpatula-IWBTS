@@ -157,14 +157,14 @@ end)
 local function Guy_init(self)
     if Helper.get_client_player().m_id < 2.0 then
         local feather = Helper.find_item("ror-hopooFeather")
-        gm.item_give_internal(self, feather.class_id - 1, 1, 0)
+        gm.item_give_internal(self, feather.class_id, 1, 0)
     end
 end
 
 local wet_value = nil
 local function onGuyStep(self)
-    self.maxbarrier = 0
-    self.maxshield = 0
+    if self.maxbarrier > 0 then self.maxbarrier = 0 end
+    if self.maxshield > 0 then self.maxshield = 0 end
     if wet_value ~= self.wet then
         wet_value = self.wet
         self.jump_count = 0
