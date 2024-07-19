@@ -1,0 +1,10 @@
+{
+	"name": "I Wanna Be The Survivor",
+	"version_number": "1.0.0",
+	"website_url": "https://github.com/SmoothSpatula/SmoothSpatula-IWBTS",
+	"description": "Adds The Kid as a playable character.",
+	"dependencies": [
+		"ReturnOfModding-ReturnOfModding-1.0.32",
+    "Klehrik-HelperFunctions-1.0.9"
+	]
+}
